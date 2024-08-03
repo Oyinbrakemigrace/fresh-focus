@@ -1,10 +1,15 @@
 import React from "react"
+import { Outlet } from "react-router-dom"
+import Header from "./components/Header"
+import Footer from "./components/Footer"
 
 function App() {
 
   return (
-    <div className="text-amber-400 font-bold text-5xl">
-      hello
+    <div>
+      <Header />
+      <Outlet />
+      <Footer />
     </div>
   )
 }
