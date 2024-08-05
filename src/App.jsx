@@ -8,7 +8,9 @@ function App() {
   return (
     <div>
       <Header />
-      <Outlet />
+      <div className="lg:px-12 px-3">
+        <Outlet />
+      </div>
       <Footer />
     </div>
   )
